@@ -1,0 +1,9 @@
+.solverlogo {
+    width: 100%;
+    height: 690px;
+    position: relative;
+    background-color: #FEE715;
+    border-radius: 20px;
+    z-index: -1;
+    box-shadow: 0 8px 15px 0 rgb(26, 34, 56);
+}
