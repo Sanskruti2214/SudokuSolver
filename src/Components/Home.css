@@ -67,6 +67,7 @@ h1{
     top:0;
     width: 28%;
     height:30%;
+    border-radius:10px;
     animation-name: jump;
     animation-iteration-count: infinite;
     animation-duration: 2s;

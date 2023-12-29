@@ -65,7 +65,7 @@ export default function Home() {
             }
         }
         return false;
-    }
+    };
 
     // Function to check if placing a number in a given cell is valid
     const isSafe = (grid, row, col, num) => {
@@ -89,7 +89,7 @@ export default function Home() {
                     return false;
 
         return true;
-    }
+    };
 
     const handleOutput = () => {
         // alert('output clicked');
@@ -122,19 +122,19 @@ export default function Home() {
                 </tbody>
             </table>
             <div className='operation'>
-                <button onClick={handleOutput}>Output</button>
+                <button onClick={handleOutput}>SOLVE</button>
                 <button onClick={handleReset}>RESET</button>
             </div>
             <div className='instruction'>
                 <h1>Sudoku Solver</h1>
                 <img className='show' src={searchimg} alt='show'/>
                 <ol type="a" className='text'>
-                    <li>Click on the box to fill Number </li>
-                    <li>Fill box with single digit from 1 to 9 </li>
-                    <li>If the box is with multiple digit then starting digit of the number will be consider</li>
-                    <li>Try to avoid filling wrong Sudoku</li>
-                    <li>After filling whole sudoku click output to get Output</li>
-                    <li>To reset use Reset Button</li>
+                    <li>Click on the cell to input a number.</li>
+                    <li>Input a single digit from 1 to 9 into the cell. </li>
+                    <li>If a cell already contains multiple digits, consider only the starting digit of the number.</li>
+                    <li>Exercise caution to avoid entering incorrect Sudoku numbers.</li>
+                    <li>After completing the entire Sudoku grid, click the "SOLVE" button to obtain the solution.</li>
+                    <li>To reset the Sudoku puzzle, use the "RESET" button.</li>
                 </ol>
             </div>
         </>
