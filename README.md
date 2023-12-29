@@ -1,70 +1,35 @@
-# Getting Started with Create React App
+![Image of Splash Screen](https://github.com/Sanskruti2214/SudokuSolver/blob/main/Screenshot%20(172).png)
+![Image of actual Sudoku Solver](https://github.com/Sanskruti2214/SudokuSolver/blob/main/Screenshot%20(174).png)https://github.com/Sanskruti2214/SudokuSolver/blob/main/Screenshot%20(174).png)
+# Sudoku Solver
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+This project implements a Sudoku solver using the backtracking algorithm. Sudoku is a popular number-placement puzzle game 
+where the goal is to fill a 9x9 grid with digits so that each column, each row, and each of the nine 3x3 subgrids contain all of the digits from 1 to 9.
 
-In the project directory, you can run:
+## Algorithm
 
-### `npm start`
+The Sudoku solver follows these steps:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. **Empty Cell Detection:**
+   - Start from the top-left corner of the puzzle.
+   - Find the first empty (unassigned) cell. If no empty cell is found, the puzzle is solved.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2. **Number Assignment:**
+   - Try assigning a number (from 1 to 9) to the empty cell.
 
-### `npm test`
+3. **Check Validity:**
+   - Check whether the assigned number conflicts with the Sudoku rules.
+   - If the number is valid, move to the next empty cell.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+4. **Recursion:**
+   - If the number is not valid, backtrack and try the next number.
+   - Continue this process until a solution is found or it's determined that no solution exists.
 
-### `npm run build`
+5. **Base Case:**
+   - The algorithm stops when all cells are filled, and the Sudoku puzzle is solved.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
