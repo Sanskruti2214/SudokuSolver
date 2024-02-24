@@ -60,3 +60,9 @@
         left: 34%;
     }
 }
+@media screen and (max-width: 850px){
+    /* .solver-img{
+        width:100%;
+        height:30%;
+    } */
+}
